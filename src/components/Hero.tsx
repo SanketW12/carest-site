@@ -5,16 +5,11 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-[#f1f1f1] from-primary-50 to-white overflow-hidden"
+      className="relative min-h-[90vh] flex flex-col  bg-[#ffffff] from-primary-50 to-white overflow-hidden"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow"></div>
-        <div className="absolute top-40 right-20 w-72 h-72 bg-accent-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse-slow animation-delay-4000"></div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+      <div className="mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <motion.div
@@ -88,6 +83,11 @@ const Hero: React.FC = () => {
             {/* Background Decoration */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary-200 to-accent-200 rounded-2xl transform rotate-6 scale-105 opacity-20"></div>
           </motion.div>
+        </div>
+      </div>
+      <div className=" mt-32 flex justify-center">
+        <div className="scroll relative w-[60px] h-[60px] border-2 border-[#333] rounded-full animate-down">
+          <div className="before-arrow absolute top-[15px] left-[18px] w-[18px] h-[18px] border-l-2 border-b-2 border-[#333] rotate-[-45deg]"></div>
         </div>
       </div>
     </section>

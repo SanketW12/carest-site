@@ -1,13 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Star,
-  MapPin,
-  Calendar,
-  Award,
-  GraduationCap,
-  Clock,
-} from "lucide-react";
 
 const Doctors: React.FC = () => {
   const services = [
@@ -31,6 +23,13 @@ const Doctors: React.FC = () => {
       image: "/careTaker.jpeg",
 
       bio: "Qualified Nursing Care & Compassionate Support at Home",
+    },
+    {
+      name: "Doctor Appointments booking",
+
+      image: "/appointment.jpeg",
+
+      bio: "Quick Doctor Appointments Near You.",
     },
 
     {

@@ -1,53 +1,52 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { 
-  Phone, 
-  Mail, 
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Phone,
+  Mail,
   MapPin,
   Facebook,
   Twitter,
   Instagram,
   Linkedin,
-  ArrowUp
-} from 'lucide-react';
+  ArrowUp,
+} from "lucide-react";
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const footerLinks = {
     services: [
-      'Cardiology',
-      'Neurology',
-      'Orthopedics',
-      'Pediatrics',
-      'Ophthalmology',
-      'General Medicine',
+      "Medicine Home Delivery",
+      "Free Lab Tests",
+      "Caretaker & Nurse Support",
+      "Free Taxi for Doctor Appointments",
+      "Emergency Support",
     ],
     quickLinks: [
-      'About Us',
-      'Our Doctors',
-      'Patient Portal',
-      'Insurance',
-      'Careers',
-      'News & Events',
+      "About Us",
+      "Our Doctors",
+      "Patient Portal",
+      "Insurance",
+      "Careers",
+      "News & Events",
     ],
     support: [
-      'Contact Us',
-      'Appointment Booking',
-      'Emergency Care',
-      'Patient Resources',
-      'Billing & Insurance',
-      'Medical Records',
+      "Contact Us",
+      "Appointment Booking",
+      "Emergency Care",
+      "Patient Resources",
+      "Billing & Insurance",
+      "Medical Records",
     ],
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
@@ -64,16 +63,16 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-2 mb-6">
-              <img 
-                src="/image copy.png" 
-                alt="Carest Logo" 
+              <img
+                src="/image copy.png"
+                alt="Carest Logo"
                 className="h-10 w-auto"
               />
             </div>
-            
+
             <p className="text-secondary-300 leading-relaxed mb-6">
-              Providing exceptional healthcare services with compassion, expertise, 
-              and cutting-edge medical technology for over 25 years.
+              Providing exceptional healthcare services with compassion,
+              expertise, and cutting-edge medical technology for over 25 years.
             </p>
 
             {/* Contact Info */}
@@ -88,7 +87,9 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-primary-400" />
-                <span className="text-secondary-300">123 Healthcare Blvd, Medical City</span>
+                <span className="text-secondary-300">
+                  123 Healthcare Blvd, Medical City
+                </span>
               </div>
             </div>
           </motion.div>
@@ -160,7 +161,9 @@ const Footer: React.FC = () => {
 
             {/* Social Links */}
             <div>
-              <h5 className="text-sm font-semibold mb-4 text-secondary-200">Follow Us</h5>
+              <h5 className="text-sm font-semibold mb-4 text-secondary-200">
+                Follow Us
+              </h5>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -191,9 +194,12 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="mb-6 lg:mb-0">
-              <h4 className="text-xl font-bold mb-2">Stay Updated with Health Tips</h4>
+              <h4 className="text-xl font-bold mb-2">
+                Stay Updated with Health Tips
+              </h4>
               <p className="text-secondary-300">
-                Subscribe to our newsletter for the latest health insights and medical updates.
+                Subscribe to our newsletter for the latest health insights and
+                medical updates.
               </p>
             </div>
             <div className="flex w-full lg:w-auto">
@@ -219,9 +225,10 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-secondary-400 text-sm mb-4 md:mb-0">
-              © 2024 Carest Healthcare. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 Carest Healthcare. All rights reserved. | Privacy Policy |
+              Terms of Service
             </div>
-            
+
             {/* Scroll to Top Button */}
             <motion.button
               onClick={scrollToTop}

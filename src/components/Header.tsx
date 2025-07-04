@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   return (
     <div className="flex justify-center">
       <motion.header
-        className={`mt-6 fixed w-[80%] rounded-full z-50 transition-all duration-300 ${
+        className={`backdrop-blur-sm shadow-lg  w-full  z-50 transition-all duration-300 ${
           isScrolled ? "bg-white backdrop-blur-sm shadow-xl" : "bg-white "
         }`}
         initial={{ y: -100 }}

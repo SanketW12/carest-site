@@ -6,6 +6,7 @@ import About from "./components/About";
 import Doctors from "./components/Doctors";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Founder from "./components/Founder";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About /> */}
       <Doctors />
       {/* <Contact /> */}
+      <Founder />
       <Footer />
     </div>
   );
