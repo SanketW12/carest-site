@@ -10,7 +10,7 @@ function Founder() {
         </span>
       </div>
       <div className="grid grid-cols-2 items-center h-full grow gap-20 ">
-        <div className="mt-16 relative ">
+        <div className="lg:col-span-1 lg:mt-0 sm:mt-40 sm:col-span-2 mt-16 relative ">
           <span className=" block grow ml-[210px] h-48 w-[260px] rounded-lg relative top-0   col-span-1  text-5xl text-transparent  bg-gradient-to-r from-purple-500 via-purple-400 to-blue-500  font-bold"></span>{" "}
           <img
             src="/anurag.png"
@@ -19,7 +19,7 @@ function Founder() {
           />
         </div>
 
-        <div className="col-span-1 text-xl ">
+        <div className="lg:col-span-1 sm:col-span-2 text-xl ">
           <span className="font-semibold pr-2"> Anurag Warhekar</span>
           is the visionary founder of Carest, a healthcare startup born from a
           deep personal understanding of the needs of elderly patients and
