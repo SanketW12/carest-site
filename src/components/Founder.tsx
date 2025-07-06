@@ -2,24 +2,24 @@ import React from "react";
 
 function Founder() {
   return (
-    <div className="flex flex-col min-h-[70vh] px-12 py-12  ">
+    <div className="flex flex-col min-h-[70vh] md:px-12 md:py-12 p-4  ">
       <div className="flex justify-center">
         {" "}
         <span className="block text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-400 to-blue-500  font-bold">
           Founder
         </span>
       </div>
-      <div className="grid grid-cols-2 items-center h-full grow gap-20 ">
-        <div className="lg:col-span-1 lg:mt-0 sm:mt-40 sm:col-span-2 mt-16 relative ">
-          <span className=" block grow ml-[210px] h-48 w-[260px] rounded-lg relative top-0   col-span-1  text-5xl text-transparent  bg-gradient-to-r from-purple-500 via-purple-400 to-blue-500  font-bold"></span>{" "}
+      <div className="grid grid-cols-2 mt-32 md:mt-0 items-center h-full grow gap-20 ">
+        <div className="md:col-span-1 md:mt-0 sm:mt-40 sm:col-span-2 mt-16 relative ">
+          <span className=" block grow ml-[70px] md:ml-[210px] h-20 md:h-48 w-[260px] rounded-lg relative top-0   col-span-1  text-5xl text-transparent  bg-gradient-to-r from-purple-500 via-purple-400 to-blue-500  font-bold"></span>{" "}
           <img
             src="/anurag.png"
             alt="Carest Logo"
-            className="h-80 -top-32 left-52 rounded-lg absolute w-auto"
+            className="md:h-80 md:-top-32 -top-28 left-32 md:left-52 rounded-lg absolute "
           />
         </div>
 
-        <div className="lg:col-span-1 sm:col-span-2 text-xl ">
+        <div className="md:col-span-1 col-span-2 text-xl ">
           <span className="font-semibold pr-2"> Anurag Warhekar</span>
           is the visionary founder of Carest, a healthcare startup born from a
           deep personal understanding of the needs of elderly patients and
