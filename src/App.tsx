@@ -7,6 +7,7 @@ import Doctors from "./components/Doctors";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Founder from "./components/Founder";
+import Subscriptions from "./components/Subscriptions";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About /> */}
       <Doctors />
       {/* <Contact /> */}
+      <Subscriptions />
       <Founder />
       <Footer />
     </div>
